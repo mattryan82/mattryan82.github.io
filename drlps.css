@@ -1,0 +1,130 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.nav-item {
+  margin: 30px;
+  /* font-family: "Roboto", sans-serif; */
+  color: black;
+}
+
+ul {
+  padding: 0;
+}
+
+.logo {
+  margin-right: auto;
+  width: 200px;
+  margin: 10px 0px;
+}
+
+#menu-btn {
+  width: 30px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    /* required width 100% as the main body is a flex box */
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+
+  .logo {
+    margin-right: auto;
+    max-width: 100%;
+    width: unset;
+  }
+
+  #menu-btn {
+    width: 30px;
+    display: none;
+  }
+}
+
+.nav-item {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+.nav-item:hover {
+  color: #116911;
+}
+
+.hero {
+  color: white;
+  /* background-color: green;
+  padding: 10px 10px 10px 10px; */
+  width: 100%;
+}
+
+.heropic {
+  display: flex;
+  background-image: url("images/hero_image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 460px;
+}
+
+.heropic-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75em;
+  backdrop-filter: blur(10px);
+  /* flex-grow: 1;
+  flex-basis: auto; */
+}
