@@ -1,9 +1,13 @@
 a {
   text-decoration: none;
+  color: #116911;
 }
 
 ul {
   list-style-type: none;
+  margin:0;
+  padding:0;
+
 }
 
 body {
@@ -36,16 +40,8 @@ body {
   align-items: center;
   height: 100px;
   width: 100%;
-}
-
-.nav-item {
-  margin: 30px;
-  /* font-family: "Roboto", sans-serif; */
-  color: black;
-}
-
-ul {
-  padding: 0;
+  background-color: rgb(153, 216, 181);
+  padding: 10px;
 }
 
 .logo {
@@ -78,6 +74,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 60%;
+    background-color: white;
   }
 
   .logo-menu-container {
@@ -98,17 +95,22 @@ ul {
     width: 30px;
     display: none;
   }
+
+  .content-box {
+    width: 30%;
+  }
+
+  
 }
 
 .nav-item {
   margin: 10px 10px 10px 10px;
   padding: 10px 10px 10px 10px;
   font-family: "Roboto", sans-serif;
-  color: black;
 }
 
 .nav-item:hover {
-  color: #116911;
+  color: darkblue;
 }
 
 .hero {
@@ -131,9 +133,74 @@ ul {
 }
 
 .heropic-text {
+  display: none;
   font-family: "Roboto", sans-serif;
-  font-size: 1.75em;
+  font-size: 1.75rem;
   backdrop-filter: blur(10px);
   /* flex-grow: 1;
   flex-basis: auto; */
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-width: 2px;
+  border-color: #cccccc;
+  border-style: solid;
+  flex-grow: 1;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.content-box:hover {
+  border-color: green;
+  border-width: 2px;
+  
+}
+
+.content-box-img{
+  align-items: center;
+  text-align: center;
+}
+
+.content-box-text{
+  text-align: left;
+  margin: 10px;
+}
+.content-box-text a{
+  font-size: 1.1rem;
+}
+
+.content-box-text a:hover{
+  color: darkblue;
+}
+
+.heropic-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75rem;
+  backdrop-filter: blur(10px);
+  /* flex-grow: 1;
+  flex-basis: auto; */
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  background-color: #116911;
+  color: white;
 }
