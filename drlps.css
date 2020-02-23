@@ -55,6 +55,125 @@ body {
   display: block;
 }
 
+.nav-item {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-item:hover {
+  color: darkblue;
+}
+
+  .hero {
+    display: none;
+    color: white;
+    /* background-color: green;
+    padding: 10px 10px 10px 10px; */
+    width: 100%;
+  }
+
+.heropic {
+  display: flex;
+  background-image: url("images/lorry2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px ;
+}
+
+.heropic-text {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75rem;
+  backdrop-filter: blur(10px);
+  /* flex-grow: 1;
+  flex-basis: auto; */
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+
+  border-width: 2px;
+  border-color: #cccccc;
+  border-style: solid;
+  flex-grow: 1;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.content-box:hover {
+  border-color: green;
+  border-width: 2px;
+  
+}
+
+.content-box-heading h2{
+  color: #5C3317;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin:10px 0px 0px 0px;
+}
+
+.content-box-heading p{ 
+  color: #006600;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  margin:0px 0px 10px 0px;
+}
+
+.content-box-img{
+  align-items: center;
+  text-align: center;
+}
+
+.content-box-text{
+  text-align: left;
+  margin: 10px;
+  overflow-wrap: break-word;  
+}
+.content-box-text a{
+  font-size: 1.1rem;
+}
+
+.content-box-text a:hover{
+  color: darkblue;
+}
+
+.heropic-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75rem;
+  backdrop-filter: blur(10px);
+  /* flex-grow: 1;
+  flex-basis: auto; */
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  background-color: #116911;
+  color: white;
+  padding: 20px 10px 20px 10px;
+}
+
 @media screen and (min-width: 769px) {
   .main-header {
     display: flex;
@@ -96,111 +215,26 @@ body {
     display: none;
   }
 
-  .content-box {
-    width: 30%;
+  .hero {
+    display: block;
+    
   }
 
-  
-}
+  .heropic {
+    display: flex;
+    background-image: url("images/hero_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 460px;
+  }
 
-.nav-item {
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  font-family: "Roboto", sans-serif;
-}
+  .content-box {
+    width: 28%;
+    padding: 0px;
+  }
 
-.nav-item:hover {
-  color: darkblue;
-}
-
-.hero {
-  color: white;
-  /* background-color: green;
-  padding: 10px 10px 10px 10px; */
-  width: 100%;
-}
-
-.heropic {
-  display: flex;
-  background-image: url("images/hero_image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 460px;
-}
-
-.heropic-text {
-  display: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.75rem;
-  backdrop-filter: blur(10px);
-  /* flex-grow: 1;
-  flex-basis: auto; */
-}
-
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-
-}
-
-.content-box {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  border-width: 2px;
-  border-color: #cccccc;
-  border-style: solid;
-  flex-grow: 1;
-  border-radius: 5px;
-  font-family: "Roboto", sans-serif;
-}
-
-.content-box:hover {
-  border-color: green;
-  border-width: 2px;
-  
-}
-
-.content-box-img{
-  align-items: center;
-  text-align: center;
-}
-
-.content-box-text{
-  text-align: left;
-  margin: 10px;
-}
-.content-box-text a{
-  font-size: 1.1rem;
-}
-
-.content-box-text a:hover{
-  color: darkblue;
-}
-
-.heropic-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.75rem;
-  backdrop-filter: blur(10px);
-  /* flex-grow: 1;
-  flex-basis: auto; */
-}
-
-.main-footer {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.75rem;
-  background-color: #116911;
-  color: white;
 }
